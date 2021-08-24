@@ -12,11 +12,11 @@ const HomePage = () => {
   return (
     <div>
       <HomeNav />
-      <HomePageContent
+      <div><HomePageContent
         title={currentState.home.title}
         text={currentState.home.text}
-      />
-      <Footer/>
+      /></div>
+      <Footer />
     </div>
   )
 }
