@@ -7,6 +7,7 @@ import { useHistory } from 'react-router-dom';
 import uuid from 'react-uuid';
 
 import DesignAsset from '../assets/designAssets/undraw_cooking_lyxy.svg';
+import Footer from '../components/footer';
 
 const initialForm = {
   registration_id: uuid(),
@@ -227,6 +228,7 @@ const SignUpForm = () => {
           </button>
         </form>
       </div>
+      <Footer/>
     </div>
   );
 };

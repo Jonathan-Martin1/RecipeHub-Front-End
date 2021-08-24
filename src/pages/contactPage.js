@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 
 import { curRentState } from '../assets/pageTitles';
 import ContactForm from '../components/contactForm';
+import Footer from '../components/footer';
 import HomeNav from '../components/homeNav';
 
 const ContactPage = () => {
@@ -23,6 +24,7 @@ const ContactPage = () => {
       </h1>
       <ContactForm />
     </Container>
+    <Footer />
     </div>
   );
 };

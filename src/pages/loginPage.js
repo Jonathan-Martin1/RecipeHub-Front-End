@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import DesignAsset from '../assets/designAssets/undraw_cooking_lyxy.svg';
+import Footer from '../components/footer';
 // import axios from 'axios';
 import UserContent from '../pages/userContent';
 import SignUpForm from './signUpPage';
@@ -164,6 +165,7 @@ export default function LoginOut({ loggedIn, setLoggedIn }) {
           </Route>
         </Switch>
       </div>
+      <Footer/>
     </Container>
   );
 }
