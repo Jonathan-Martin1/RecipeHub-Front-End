@@ -25,7 +25,7 @@ a:hover {
 }
 
 .userTitle {
- position: absolute;
+ padding: 20px;
  width: 157px;
  height: 36px;
  left: 15px;
