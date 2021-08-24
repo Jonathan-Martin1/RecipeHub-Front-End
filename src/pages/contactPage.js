@@ -1,7 +1,10 @@
-import ContactForm from '../components/contactForm';
 import React, { useState } from 'react';
-import { curRentState } from '../assets/pageTitles';
+
 import { Container } from 'react-bootstrap';
+
+import { curRentState } from '../assets/pageTitles';
+import ContactForm from '../components/contactForm';
+import HomeNav from '../components/homeNav';
 
 const ContactPage = () => {
   //eslint-disable-next-line
@@ -14,6 +17,7 @@ const ContactPage = () => {
         boxShadow: '2px 2px grey',
       }}
     >
+    <HomeNav />
       <h1 style={{ display: 'flex', justifyContent: 'center' }}>
         {currentState.contact.title}
       </h1>
