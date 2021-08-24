@@ -74,7 +74,7 @@ export default function LoginOut({ loggedIn, setLoggedIn }) {
       }}
     >
     <div>
-    <img src={DesignAsset} alt='RecipeHub'/>
+      <img src={DesignAsset} alt='RecipeHub'/>
     </div>
       <div
         variant='outline-dark'
@@ -85,7 +85,9 @@ export default function LoginOut({ loggedIn, setLoggedIn }) {
           boxShadow: '2px 2px grey',
         }}
       >
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', margin: 'auto',
+        width: 'auto',
+        padding: '10px', }}>
           <h2 className='page-title1'>Log In</h2>
         </div>
         <form onSubmit={handleSubmit}>

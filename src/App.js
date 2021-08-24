@@ -9,7 +9,6 @@ import {
 } from 'react-router-dom';
 
 import { curRentState } from './assets/pageTitles';
-import Footer from './components/footer';
 import HomeNav from './components/homeNav';
 import HomePageContent from './components/homePageContent';
 import ContactForm from './pages/contactPage';
@@ -70,7 +69,6 @@ function App() {
             <h1>404 Not Found</h1>
           </Route>
         </Switch>
-        <Footer />
         </Router>
   )
 }

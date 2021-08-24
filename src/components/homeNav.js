@@ -1,4 +1,5 @@
 import './App.css';
+import '../components/user.css';
 
 import React from 'react';
 
@@ -12,8 +13,8 @@ import { Link } from 'react-router-dom';
 function HomeNav(props) {
   return (
       <Container className='p-0' fluid={true}>
-        <Navbar loggedIn={props.loggedIn} className='border-bottom' bg='transparent' expand='lg'>
-          <Navbar.Brand>RecipeHub</Navbar.Brand>
+        <Navbar loggedIn={props.loggedIn} className='border-bottom' expand='lg'>
+        <div className='homeTitle'><Navbar.Brand>RecipeHub</Navbar.Brand></div>
           <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
           <Navbar.Collapse id='navbar-toggle'>
             <Nav className='ml-auto'>

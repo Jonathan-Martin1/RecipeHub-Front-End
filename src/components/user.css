@@ -1,0 +1,42 @@
+
+.navbar-light .navbar-brand {
+ color: #10b568;
+ font-weight: 900;
+ font-size: 50px;
+}
+
+.navbar-light .navbar-brand:hover {
+ color: #10b568;
+} 
+
+
+a {
+ color: #10b568;
+ text-decoration: none;
+ font-family: SF Pro Display;
+ font-style: normal;
+ font-weight: 900;
+ font-size: 30px;
+ line-height: 36px;
+}
+
+a:hover {
+ color: #10b568;
+}
+
+.userTitle {
+ position: absolute;
+ width: 157px;
+ height: 36px;
+ left: 15px;
+ top: 25px;
+}
+
+.userNav {
+ position: absolute;
+ width: 220px;
+ height: 100%;
+ left: 0px;
+ top: 52px;
+ background-color: #040b16;
+}
