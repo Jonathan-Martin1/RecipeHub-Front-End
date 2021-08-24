@@ -9,7 +9,8 @@ import HomeNav from '../components/homeNav';
 const ContactPage = () => {
   //eslint-disable-next-line
   const [currentState, setCurrentState] = useState({ ...curRentState });
-  return (
+  return (<div>
+    <HomeNav />
     <Container
       style={{
         border: '2px solid blue',
@@ -17,12 +18,12 @@ const ContactPage = () => {
         boxShadow: '2px 2px grey',
       }}
     >
-    <HomeNav />
       <h1 style={{ display: 'flex', justifyContent: 'center' }}>
         {currentState.contact.title}
       </h1>
       <ContactForm />
     </Container>
+    </div>
   );
 };
 
