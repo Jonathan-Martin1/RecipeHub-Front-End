@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
+
 import Container from 'react-bootstrap/Container';
-import SignUpForm from './signUpPage';
+import {
+  Route,
+  Switch,
+  useHistory,
+} from 'react-router-dom';
+
+import DesignAsset from '../assets/designAssets/undraw_cooking_lyxy.svg';
 // import axios from 'axios';
 import UserContent from '../pages/userContent';
+import SignUpForm from './signUpPage';
 
 export default function LoginOut({ loggedIn, setLoggedIn }) {
   const history = useHistory();
@@ -66,6 +73,9 @@ export default function LoginOut({ loggedIn, setLoggedIn }) {
         justifyContent: 'center',
       }}
     >
+    <div>
+    <img src={DesignAsset} alt='RecipeHub'/>
+    </div>
       <div
         variant='outline-dark'
         className='container w-50'

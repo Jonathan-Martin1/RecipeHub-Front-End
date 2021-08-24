@@ -1,7 +1,12 @@
+import '../components/signup.css';
+
 import React, { useState } from 'react';
+
+import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import uuid from 'react-uuid';
-import axios from 'axios';
+
+import DesignAsset from '../assets/designAssets/undraw_cooking_lyxy.svg';
 
 const initialForm = {
   registration_id: uuid(),
@@ -84,12 +89,25 @@ const SignUpForm = () => {
         justifyContent: 'center',
       }}
     >
+    <div style={{padding: '200px'}}>
+      <ul>
+      <li><h3>Store your recipes</h3></li>
+      <h6>Take your favorite recipe from anywhere and import them to one place.</h6>
+      <li><h3>Keep the recipes categorized</h3></li>
+      <h6>Add your own categories to each recipe so you never lose them.</h6>
+      <li><h3>Never forget your personal changes</h3></li>
+      <h6>Give your recipes some notes so you never forget to tweak your ingredients.</h6>
+      </ul>
+    </div>
       <div className='p-3 rounded' style={{ border: '2px solid blue' }}>
         <div
           className='card-title'
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <h3 className='page-title'>Sign Up Today!</h3>
+        </div>
+        <div>
+        <img src={DesignAsset} alt='RecipeHub'/>
         </div>
         <form
           onSubmit={submitHandler}

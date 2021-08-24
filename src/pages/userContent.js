@@ -6,6 +6,7 @@ const UserContent = () => {
   return (
     <div>
       <UserNav />
+      
     </div>
   )
 }
