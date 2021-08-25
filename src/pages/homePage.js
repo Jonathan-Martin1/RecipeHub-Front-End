@@ -6,19 +6,20 @@ import HomeNav from '../components/homeNav';
 import HomePageContent from '../components/homePageContent';
 
 const HomePage = () => {
-  //eslint-disable-next-line
-  const [currentState, setCurrentState] = useState({ ...curRentState })
+	//eslint-disable-next-line
+	const [currentState, setCurrentState] = useState({ ...curRentState });
 
-  return (
-    <div>
-      <HomeNav />
-      <div><HomePageContent
-        title={currentState.home.title}
-        text={currentState.home.text}
-      /></div>
-      <Footer />
-    </div>
-  )
-}
+	return (
+		<div>
+			<HomeNav />
+			<div>
+				<HomePageContent />
+			</div>
+			<div className='footer'>
+				<Footer />
+			</div>
+		</div>
+	);
+};
 
-export default HomePage
+export default HomePage;

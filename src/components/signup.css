@@ -3,43 +3,49 @@
 /* SYMBOLS and NUMERICS */
 
 ul {
-  list-style-type: square;
+	list-style-type: square;
 }
 
 ol {
-  list-style-type:decimal;
+	list-style-type: decimal;
 }
-
 
 /* IMAGES: */
 
 li {
-  display: flex;
-  margin: 0;
-  padding: 15px 0 15px 60px;
-  list-style: none;
-  background-image: url("../assets/designAssets/blueWhiteCheckbox.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 30px;
+	display: flex;
+	margin: 0;
+	padding: 15px 0 15px 60px;
+	list-style: none;
+	background-image: url('../assets/designAssets/blueWhiteCheckbox.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
 }
-
-
 
 /* Define the color of each bullet point on the list */
 
 ul {
-  list-style: none; /* Remove list bullets */
-  padding: 0;
-  margin: 0;
+	list-style: none; /* Remove list bullets */
+	padding: 0;
+	margin: 0;
 }
 
 li {
-  padding-left: 16px;
+	padding-left: 16px;
 }
 
 li:before {
-  content: "•";         /* Insert content that looks like bullets */
-  padding-right: 8px;
-  color: blue; 
+	content: '•'; /* Insert content that looks like bullets */
+	padding-right: 8px;
+	color: blue;
+}
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #03cfb3;
+	text-align: center;
 }
