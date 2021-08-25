@@ -6,7 +6,6 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import uuid from 'react-uuid';
 
-import DesignAsset from '../assets/designAssets/undraw_cooking_lyxy.svg';
 import Footer from '../components/footer';
 
 const initialForm = {
@@ -106,9 +105,6 @@ const SignUpForm = () => {
           style={{ display: 'flex', justifyContent: 'center' }}
         >
           <h3 className='page-title'>Sign Up Today!</h3>
-        </div>
-        <div>
-        <img src={DesignAsset} alt='RecipeHub'/>
         </div>
         <form
           onSubmit={submitHandler}
