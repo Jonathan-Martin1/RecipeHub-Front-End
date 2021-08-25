@@ -1,17 +1,16 @@
-
 .navbar-light .navbar-brand {
- color: #10b568;
+ color: rgba(3, 207, 179, 1);
  font-weight: 900;
  font-size: 50px;
 }
 
 .navbar-light .navbar-brand:hover {
- color: #10b568;
+ color: rgba(3, 207, 179, 1);
 } 
 
 
 a {
- color: #10b568;
+ color: rgba(3, 207, 179, 1);
  text-decoration: none;
  font-family: SF Pro Display;
  font-style: normal;
@@ -21,7 +20,7 @@ a {
 }
 
 a:hover {
- color: #10b568;
+ color: rgba(3, 207, 179, 1);
 }
 
 .userTitle {
