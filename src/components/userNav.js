@@ -27,16 +27,16 @@ const UserNav = (props) => {
 						<h1 onClick={userTitleClickHandle}>RecipeHub</h1>
 					</a>
 				</div>
-			</div>
-			<div className='home-categories'>
-				<a href='/userContent' title='User Content'>
-					<h1 onClick={userHomeHandle}>Home</h1>
-				</a>
-			</div>
-			<div className='categories'>
-				<a href='/userContent' title='User Content'>
-					<h1 onClick={userCatagoriesHandle}>Catagories</h1>
-				</a>
+				<div className='home-categories'>
+					<a href='/userContent' title='User Content'>
+						<h1 onClick={userHomeHandle}>Home</h1>
+					</a>
+				</div>
+				<div className='categories'>
+					<a href='/userContent' title='User Content'>
+						<h1 onClick={userCatagoriesHandle}>Catagories</h1>
+					</a>
+				</div>
 			</div>
 		</div>
 	);
