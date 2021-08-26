@@ -1,41 +1,44 @@
 .navbar-light .navbar-brand {
- color: rgba(3, 207, 179, 1);
- font-weight: 900;
- font-size: 50px;
+	color: rgba(3, 207, 179, 1);
+	font-weight: 900;
+	font-size: 50px;
 }
 
 .navbar-light .navbar-brand:hover {
- color: rgba(3, 207, 179, 1);
-} 
-
+	color: rgba(3, 207, 179, 1);
+}
 
 a {
- color: rgba(3, 207, 179, 1);
- text-decoration: none;
- font-family: SF Pro Display;
- font-style: normal;
- font-weight: 900;
- font-size: 30px;
- line-height: 36px;
+	color: rgba(3, 207, 179, 1);
+	text-decoration: none;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 36px;
 }
 
 a:hover {
- color: rgba(3, 207, 179, 1);
+	color: rgba(3, 207, 179, 1);
 }
 
 .userTitle {
- padding: 20px;
- width: 157px;
- height: 36px;
- left: 15px;
- top: 25px;
+	padding: 20px;
+	width: 157px;
+	height: 36px;
+	left: 15px;
+	top: 25px;
 }
 
 .userNav {
- position: absolute;
- width: 220px;
- height: 100%;
- left: 0px;
- /* top: 52px; */
- background-color: #040b16;
+	position: absolute;
+	width: 220px;
+	height: 100%;
+	left: 0px;
+	/* top: 52px; */
+	background-color: #040b16;
+}
+
+.home-catagories {
+	color: white;
 }

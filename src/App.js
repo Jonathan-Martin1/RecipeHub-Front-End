@@ -17,61 +17,59 @@ import SignUpForm from './pages/signUpPage';
 import UserContent from './pages/userContent';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false)
+	const [loggedIn, setLoggedIn] = useState(false);
 
-  //eslint-disable-next-line
-  const [currentState, setCurrentStat] = useState({...curRentState})
-  return (
-    <Router>
-        <Switch>
-          <Route
-            path='/'
-            exact
-            render={() => (
-              <div>
-                <HomeNav />
-                <HomePageContent
-                  title={currentState.home.title}
-                  text={currentState.home.text}
-                />
-              </div>
-            )}
-          />
-          <Route path='/contact' render={() => <ContactForm />} />
-          <Route
-            path='/signup'
-            render={() => (
-              <div>
-                <HomeNav />
-                <SignUpForm title={currentState.signup.title} />
-              </div>
-            )}
-          />
-          <Route
-            path='/login'
-            render={() => (
-              <div>
-                <HomeNav />
-                <Login
-                  title={currentState.login.title}
-                  setLoggedIn={setLoggedIn}
-                  loggedIn={loggedIn}
-                />
-              </div>
-            )}
-          />
-          <Route path='/usercontent'>
-            <UserContent setLoggedIn={setLoggedIn}
-                  loggedIn={loggedIn}/>
-          </Route>
-          <Route>
-            <HomeNav />
-            <h1>404 Not Found</h1>
-          </Route>
-        </Switch>
-        </Router>
-  )
+	//eslint-disable-next-line
+	const [currentState, setCurrentStat] = useState({ ...curRentState });
+	return (
+		<Router>
+			<Switch>
+				<Route
+					path='/'
+					exact
+					render={() => (
+						<div>
+							<HomeNav />
+							<HomePageContent
+								title={currentState.home.title}
+								text={currentState.home.text}
+							/>
+						</div>
+					)}
+				/>
+				<Route path='/contact' render={() => <ContactForm />} />
+				<Route
+					path='/signup'
+					render={() => (
+						<div>
+							<HomeNav />
+							<SignUpForm title={currentState.signup.title} />
+						</div>
+					)}
+				/>
+				<Route
+					path='/login'
+					render={() => (
+						<div>
+							<HomeNav />
+							<Login
+								title={currentState.login.title}
+								setLoggedIn={setLoggedIn}
+								loggedIn={loggedIn}
+							/>
+						</div>
+					)}
+				/>
+				<Route path='/usercontent'>
+					<UserContent setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+				</Route>
+				<Route>
+					<HomeNav />
+					<h1>404 Not Found</h1>
+				</Route>
+			</Switch>
+		</Router>
+	);
 }
 
-export default App
-
+export default App;
