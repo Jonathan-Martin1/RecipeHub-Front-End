@@ -8,11 +8,6 @@
 	color: rgba(3, 207, 179, 1);
 }
 
-.bottom {
-	color: white;
-	width: 100%;
-}
-
 a {
 	color: rgba(3, 207, 179, 1);
 	text-decoration: none;
@@ -27,9 +22,25 @@ a:hover {
 	color: rgba(3, 207, 179, 1);
 }
 
-a h4 {
+.home {
 	color: white;
 	margin-left: 35px;
+	margin: 0;
+	padding: 10px 0 10px 40px;
+	background-image: url('../assets/designAssets/home2.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
+.cata {
+	margin-left: 35px;
+	margin: 0;
+	padding: 10px 0 10px 40px;
+	background-image: url('../assets/designAssets/Category.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
 }
 
 a:hover h4 {

@@ -23,20 +23,27 @@ const UserNav = (props) => {
 		<div className='otherNav'>
 			<div className='userNav'>
 				<div className='userTitle'>
-					<a href='/' title='Home'>
+					<a href='/' title='Home of RecipeHub'>
 						<h1 onClick={userTitleClickHandle}>RecipeHub</h1>
 					</a>
 					<br />
 					<br />
-					<a href='/userContent' title='User Content'>
-						<h4 onClick={userHomeHandle}>Home</h4>
-					</a>
-					<a href='/userContent' title='User Content'>
-						<h4 onClick={userCatagoriesHandle}>Catagories</h4>
-					</a>
+					<div className='home'>
+						<a href='/usercontent' title='Home'>
+							<h4 onClick={userHomeHandle}>Home</h4>
+						</a>
+					</div>
+					<div className='cata'>
+						<a href='/usercontent' title='Create a Categorie'>
+							<h4 onClick={userCatagoriesHandle}>Categories</h4>
+						</a>
+					</div>
 					<hr
 						style={{
 							width: '100%',
+							height: '2px',
+							backgroundColor: 'white',
+							borderWidth: '0',
 							textAlign: 'left',
 							color: 'white',
 							marginLeft: '10px',
