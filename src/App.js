@@ -61,12 +61,22 @@ function App() {
 						</div>
 					)}
 				/>
-				<Route path='/usercontent'>
-					<UserContent setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
-				</Route>
-				<Route path='/newrecipe'>
-					<NewRecipe />
-				</Route>
+				<Route
+					path='/usercontent'
+					render={() => (
+						<div>
+							<UserContent setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+						</div>
+					)}
+				/>
+				<Route
+					path='/newrecipe'
+					render={() => (
+						<div>
+							<NewRecipe />
+						</div>
+					)}
+				/>
 				<Route>
 					<HomeNav />
 					<h1>404 Not Found</h1>
