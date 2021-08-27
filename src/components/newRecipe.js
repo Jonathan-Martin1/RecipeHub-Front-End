@@ -62,7 +62,7 @@ const NewRecipe = () => {
 								id='recipeTitle'
 								value={formData.recipeTitle}
 								onChange={handleChange}
-								// required
+								required
 							/>
 							<label
 								htmlFor='recipeCookTime'
@@ -74,14 +74,13 @@ const NewRecipe = () => {
 								}}>
 								Recipe Cook Time
 							</label>
-							<input
+							<textarea
 								name='recipeCookTime'
 								type='text'
 								className='form-control'
 								id='recipeCookTime'
 								value={formData.recipeCookTime}
 								onChange={handleChange}
-								// required
 							/>
 							<label
 								htmlFor='recipeIngredients'
@@ -93,14 +92,13 @@ const NewRecipe = () => {
 								}}>
 								Recipe Ingredients
 							</label>
-							<input
+							<textarea
 								name='recipeIngredients'
 								type='text'
 								className='form-control'
 								id='recipeIngredients'
 								value={formData.recipeIngredients}
 								onChange={handleChange}
-								// required
 							/>
 							<label
 								htmlFor='recipeInstructions'
@@ -112,14 +110,13 @@ const NewRecipe = () => {
 								}}>
 								Recipe Instructions
 							</label>
-							<input
+							<textarea
 								name='recipeInstructions'
 								type='text'
 								className='form-control'
 								id='recipeInstructions'
 								value={formData.recipeInstructions}
 								onChange={handleChange}
-								// required
 							/>
 						</div>
 						<button
