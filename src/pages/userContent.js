@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MainRecipeContent from '../components/mainRecipeContent';
 import UserNav from '../components/userNav';
 
 const UserContent = (props, { loggedIn, setLoggedIn }) => {
@@ -9,6 +10,10 @@ const UserContent = (props, { loggedIn, setLoggedIn }) => {
 		<div>
 			<div>
 				<UserNav handleShow={handleShow} handleClose={handleClose} />
+			</div>
+			<div
+				style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+				<MainRecipeContent />
 			</div>
 		</div>
 	);

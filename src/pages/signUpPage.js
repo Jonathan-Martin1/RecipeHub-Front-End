@@ -89,21 +89,21 @@ const SignUpForm = () => {
 				justifyContent: 'center',
 			}}>
 			<div style={{ padding: '200px' }}>
-				<ul>
-					<li>
+				<ul className='signUp'>
+					<li className='itemOne'>
 						<h3>Store your recipes</h3>
 					</li>
 					<h6>
 						Take your favorite recipe from anywhere and import them to one
 						place.
 					</h6>
-					<li>
+					<li className='itemOne'>
 						<h3>Keep the recipes categorized</h3>
 					</li>
 					<h6>
 						Add your own categories to each recipe so you never lose them.
 					</h6>
-					<li>
+					<li className='itemOne'>
 						<h3>Never forget your personal changes</h3>
 					</li>
 					<h6>

@@ -6,25 +6,33 @@ import {
   Container,
   Form,
 } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 import UserNav from './userNav';
 
-const NewRecipe = () => {
+const NewRecipe = (props) => {
 	const initialData = {
 		recipeTitle: '',
+		recipeImageURL: '',
 		recipeCookTime: '',
 		recipeInstructions: '',
 		recipeIngredients: '',
 	};
 	const [formData, setFormData] = useState(initialData);
+	const history = useHistory();
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		props = formData;
+		history.push('/usercontent');
 	};
 
 	const handleChange = (event) => {
 		setFormData(() => {
-			return { ...formData, [event.target.name]: event.target.value };
+			return {
+				...formData,
+				[event.target.name]: event.target.value,
+			};
 		});
 	};
 
@@ -34,7 +42,6 @@ const NewRecipe = () => {
 				display: 'flex',
 				margin: 'auto',
 				width: 'auto',
-				padding: '10px',
 				justifyContent: 'center',
 			}}>
 			<div>
@@ -61,6 +68,25 @@ const NewRecipe = () => {
 								className='form-control'
 								id='recipeTitle'
 								value={formData.recipeTitle}
+								onChange={handleChange}
+								required
+							/>
+							<label
+								htmlFor='recipeImageURL'
+								className='form-label'
+								style={{
+									color: 'black',
+									display: 'flex',
+									justifyContent: 'center',
+								}}>
+								Recipe Image Address URL
+							</label>
+							<input
+								name='recipeImageURL'
+								type='text'
+								className='form-control'
+								id='recipeImageURL'
+								value={formData.recipeImageURL}
 								onChange={handleChange}
 								required
 							/>

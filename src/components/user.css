@@ -97,3 +97,13 @@ a:hover h4 {
 	height: 500px;
 	font-size: 14px;
 }
+
+ul {
+	display: flex;
+	justify-content: center;
+}
+
+ol {
+	display: flex;
+	justify-content: center;
+}

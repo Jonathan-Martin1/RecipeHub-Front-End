@@ -12,6 +12,7 @@ import { curRentState } from './assets/pageTitles';
 import HomeNav from './components/homeNav';
 import HomePageContent from './components/homePageContent';
 import NewRecipe from './components/newRecipe';
+import ViewRecipe from './components/viewRecipe';
 import ContactForm from './pages/contactPage';
 import Login from './pages/loginPage';
 import SignUpForm from './pages/signUpPage';
@@ -74,6 +75,14 @@ function App() {
 					render={() => (
 						<div>
 							<NewRecipe />
+						</div>
+					)}
+				/>
+				<Route
+					path='/viewrecipe'
+					render={() => (
+						<div>
+							<ViewRecipe />
 						</div>
 					)}
 				/>

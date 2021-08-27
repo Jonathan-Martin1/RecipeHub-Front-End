@@ -1,18 +1,8 @@
 /* Choose the symbol, image or numeric for the bullet points on the list: */
 
-/* SYMBOLS and NUMERICS */
-
-ul {
-	list-style-type: square;
-}
-
-ol {
-	list-style-type: decimal;
-}
-
 /* IMAGES: */
 
-li {
+.itemOne {
 	display: flex;
 	margin: 0;
 	padding: 15px 0 15px 60px;
@@ -25,17 +15,17 @@ li {
 
 /* Define the color of each bullet point on the list */
 
-ul {
+.signUp {
 	list-style: none; /* Remove list bullets */
 	padding: 0;
 	margin: 0;
 }
 
-li {
+/* .itemOne {
 	padding-left: 16px;
-}
+} */
 
-li:before {
+.itemOne:before {
 	content: '•'; /* Insert content that looks like bullets */
 	padding-right: 8px;
 	color: blue;

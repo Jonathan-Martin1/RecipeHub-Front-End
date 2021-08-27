@@ -1,7 +1,13 @@
-import React from 'React';
+import React from 'react';
 
-const mainRecipeContent = () => {
-	return <div></div>;
+import Cards from './cards';
+
+const MainRecipeContent = () => {
+	return (
+		<div>
+			<Cards />
+		</div>
+	);
 };
 
-export default mainRecipeContent;
+export default MainRecipeContent;
