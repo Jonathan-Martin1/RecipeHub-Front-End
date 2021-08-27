@@ -8,6 +8,11 @@
 	color: rgba(3, 207, 179, 1);
 }
 
+.bottom {
+	color: white;
+	width: 100%;
+}
+
 a {
 	color: rgba(3, 207, 179, 1);
 	text-decoration: none;
@@ -22,8 +27,19 @@ a:hover {
 	color: rgba(3, 207, 179, 1);
 }
 
+a h4 {
+	color: white;
+	margin-left: 35px;
+}
+
+a:hover h4 {
+	color: white;
+	margin-left: 35px;
+}
+
 .userTitle {
 	padding: 20px;
+	margin: 25px;
 	width: 157px;
 	height: 36px;
 	left: 15px;
@@ -32,13 +48,8 @@ a:hover {
 
 .userNav {
 	position: absolute;
-	width: 220px;
+	width: 300px;
 	height: 100%;
 	left: 0px;
-	/* top: 52px; */
 	background-color: #040b16;
-}
-
-.home-catagories {
-	color: white;
 }

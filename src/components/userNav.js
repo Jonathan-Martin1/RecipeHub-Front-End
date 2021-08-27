@@ -20,22 +20,28 @@ const UserNav = (props) => {
 		handleShow();
 	};
 	return (
-		<div>
+		<div className='otherNav'>
 			<div className='userNav'>
 				<div className='userTitle'>
 					<a href='/' title='Home'>
 						<h1 onClick={userTitleClickHandle}>RecipeHub</h1>
 					</a>
-				</div>
-				<div className='home-categories'>
+					<br />
+					<br />
 					<a href='/userContent' title='User Content'>
-						<h1 onClick={userHomeHandle}>Home</h1>
+						<h4 onClick={userHomeHandle}>Home</h4>
 					</a>
-				</div>
-				<div className='categories'>
 					<a href='/userContent' title='User Content'>
-						<h1 onClick={userCatagoriesHandle}>Catagories</h1>
+						<h4 onClick={userCatagoriesHandle}>Catagories</h4>
 					</a>
+					<hr
+						style={{
+							width: '100%',
+							textAlign: 'left',
+							color: 'white',
+							marginLeft: '10px',
+						}}
+					/>
 				</div>
 			</div>
 		</div>
