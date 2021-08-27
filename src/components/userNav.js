@@ -6,6 +6,7 @@ import { useHistory } from 'react-router';
 
 const UserNav = (props) => {
 	const history = useHistory();
+	//eslint-disable-next-line
 	let handleShow = props.handleShow;
 	const userTitleClickHandle = (event) => {
 		event.preventDefault();
@@ -17,7 +18,10 @@ const UserNav = (props) => {
 	};
 	const userCatagoriesHandle = (event) => {
 		event.preventDefault();
-		handleShow();
+	};
+	const newRecipeHandle = (event) => {
+		event.preventDefault();
+		history.push('/newrecipe');
 	};
 	return (
 		<div className='otherNav'>
@@ -36,6 +40,11 @@ const UserNav = (props) => {
 					<div className='cata'>
 						<a href='/usercontent' title='Create a Categorie'>
 							<h4 onClick={userCatagoriesHandle}>Categories</h4>
+						</a>
+					</div>
+					<div className='addRecipe'>
+						<a href='/newrecipe' title='Add a New Recipe'>
+							<h4 onClick={newRecipeHandle}>Add Recipe</h4>
 						</a>
 					</div>
 					<hr

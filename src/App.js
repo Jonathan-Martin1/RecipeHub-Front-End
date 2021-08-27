@@ -11,6 +11,7 @@ import {
 import { curRentState } from './assets/pageTitles';
 import HomeNav from './components/homeNav';
 import HomePageContent from './components/homePageContent';
+import NewRecipe from './components/newRecipe';
 import ContactForm from './pages/contactPage';
 import Login from './pages/loginPage';
 import SignUpForm from './pages/signUpPage';
@@ -62,6 +63,9 @@ function App() {
 				/>
 				<Route path='/usercontent'>
 					<UserContent setLoggedIn={setLoggedIn} loggedIn={loggedIn} />
+				</Route>
+				<Route path='/newrecipe'>
+					<NewRecipe />
 				</Route>
 				<Route>
 					<HomeNav />

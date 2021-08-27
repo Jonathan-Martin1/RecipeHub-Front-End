@@ -43,6 +43,16 @@ a:hover {
 	background-size: 30px;
 }
 
+.addRecipe {
+	margin-left: 35px;
+	margin: 0;
+	padding: 10px 0 10px 40px;
+	background-image: url('../assets/designAssets/Category.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
 a:hover h4 {
 	color: white;
 	margin-left: 35px;
