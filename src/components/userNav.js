@@ -49,6 +49,12 @@ const UserNav = (props) => {
 							marginLeft: '10px',
 						}}
 					/>
+					<br />
+					<div className='viewCategories'>
+						<a href='/viewcategories' title='View All Categories'>
+							View Categories
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
