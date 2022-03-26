@@ -11,7 +11,7 @@ const ContactPage = () => {
 	//eslint-disable-next-line
 	const [currentState, setCurrentState] = useState({ ...curRentState });
 	return (
-		<div>
+		<div style={{backgroundColor: 'cyan'}}>
 			<HomeNav />
 			<Container
 				style={{
