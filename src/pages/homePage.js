@@ -10,7 +10,7 @@ const HomePage = () => {
 	const [currentState, setCurrentState] = useState({ ...curRentState });
 
 	return (
-		<div style={{background='cyan'}}>
+		<div style={{backgroundColor:'cyan'}}>
 			<HomeNav />
 			<div>
 				<HomePageContent />
