@@ -7,7 +7,7 @@ const UserContent = (props, { loggedIn, setLoggedIn }) => {
 	const handleClose = props.handleClose;
 	const handleShow = props.handleShow;
 	return (
-		<div style={{background='cyan'}}>
+		<div style={{backgroundColor:'cyan'}}>
 			<div>
 				<UserNav handleShow={handleShow} handleClose={handleClose} />
 			</div>
