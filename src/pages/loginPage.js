@@ -68,7 +68,7 @@ export default function LoginOut({ loggedIn, setLoggedIn }) {
 
 	return (
 		<Container
-			style={{
+			style={{backgroundColor: 'cyan',
 				display: 'flex',
 				margin: 'auto',
 				width: 'auto',
