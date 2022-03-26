@@ -81,7 +81,7 @@ const SignUpForm = () => {
 
 	return (
 		<div
-			style={{
+			style={{backgroundColor: 'cyan',
 				display: 'flex',
 				margin: 'auto',
 				width: 'auto',
